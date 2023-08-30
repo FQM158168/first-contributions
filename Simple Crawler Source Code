@@ -1,0 +1,10 @@
+import requests
+
+def get_html(url):
+    response = requests.get(url)
+    return response.text
+
+if __name__ == "__main__":
+    target_url = "http://example.com"
+    html = get_html(target_url)
+    print(html)
